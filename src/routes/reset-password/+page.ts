@@ -8,11 +8,11 @@ export const load: PageLoad = async ({ url }) => {
     return { status: 400, error: new Error('Missing token') }
   }
 
-  const valid = await checkToken(token)
+  const res = await checkToken(token)
 
-  if (!valid) {
-    return { status: 404, error: new Error('Invalid token') }
+  if (res.messageCode === 'token-is-valid') {
+    return { token }
   }
 
-  return { token }
+  return { status: 404, error: new Error('Invalid token') }
 }

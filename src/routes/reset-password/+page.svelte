@@ -4,12 +4,9 @@
 
   let { data }: PageProps = $props()
 
-  const token = data.token || ''
-
-  console.log('Token:', token)
-
-  let title = $state('Reset your password'),
-    description = $state('Enter your new password below to regain access to your account. Make sure to choose a strong and secure password.'),
+  let token = $state(data.token || ''),
+    title = $state('Reset your password'),
+    description = $state('Enter your new password below to regain access to your account.'),
     showForm = $state(true),
     password = $state(''),
     confirmPassword = $state('')
@@ -24,7 +21,8 @@
 
   const onReset = async () => {
     const res = await resetPassword({ token, password })
-    if (res.ok) {
+
+    if (res.messageCode === 'password-reset-successful') {
       showForm = false
       title = 'Password reset successful'
       description = 'Your password has been successfully reset. You can now log in with your new password.'

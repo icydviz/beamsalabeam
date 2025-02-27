@@ -76,12 +76,12 @@ export function put(path: string, data?: unknown, token?: string): Promise<any> 
   return send({ method: 'PUT', path, data, token })
 }
 
-export const checkToken = async (token: string): Promise<boolean> => {
+export const checkToken = async (token: string) => {
   const res = await get(`v1/password-reset/${token}`)
-  return res.ok
+  return res
 }
 
-export const resetPassword = async (token: string, password: string): Promise<boolean> => {
+export const resetPassword = async (token: string, password: string) => {
   const res = await post(`v1/password-reset`, { token, password })
-  return res.ok
+  return res
 }
