@@ -1,2 +1,28 @@
-@import "tailwindcss";
-@plugin "daisyui";
+@import url("./styles/base.css");
+@import url("./styles/button.css");
+@import url("./styles/footer.css");
+@import url("./styles/hero.css");
+@import url("./styles/link.css");
+@import url("./styles/typography.css");
+
+.app {
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.h-screen {
+    height: 100vh;
+}
+
+.m-0 {
+    margin: 0px;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.max-w-md {
+    max-width: 28rem;
+}

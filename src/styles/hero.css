@@ -1,0 +1,14 @@
+.hero,
+.hero-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero {
+    padding: 16px;
+}
+
+.hero-content {
+    flex-direction: column;
+}

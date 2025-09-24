@@ -1,0 +1,13 @@
+@import url("./variables.css");
+
+.text-center {
+    text-align: center;
+}
+
+.text-subtitle {
+    color: var(--subtitle-color);
+}
+
+.text-display {
+    font-size: 48px;
+}

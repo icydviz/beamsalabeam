@@ -1,0 +1,23 @@
+@import url("variables.css");
+
+.link {
+    color: var(--secondary-color);
+    text-decoration: none;
+    transition-property: color;
+    transition-timing-function: linear;
+    transition-duration: .2s;
+}
+
+.link:hover {
+    color: color-mix(in oklab, var(--secondary-color) 100%, #000 10%);
+    text-decoration: underline;
+}
+
+.link:visited {
+    color: color-mix(in oklab, var(--secondary-color) 100%, #000 20%);
+    color: var(--secondary-color);
+}
+
+.link:active {
+    color: var(--secondary-color);
+}
