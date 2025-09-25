@@ -1,0 +1,11 @@
+.p-0 {
+    padding: 0px;
+}
+
+.p-1 {
+    padding: 1rem;
+}
+
+.p-top-safe-area {
+    padding-top: 92px;
+}

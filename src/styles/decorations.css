@@ -1,3 +1,5 @@
+@import url("variables.css");
+
 .img-decor-1 {
     position: relative;
 }
@@ -15,4 +17,20 @@
     transform: perspective(800px) rotateX(0deg);
     transform-origin: center;
     display: inline-block;
+}
+
+.gradient-1 {
+    background: radial-gradient(at 40% 40%, var(--secondary-color) -200%, transparent 30%), radial-gradient(at 60% 60%, var(--primary-color) -200%, transparent 30%);
+}
+
+.bg-frosted-glass {
+    background: color-mix(in oklch, var(--surface-color) 10%, transparent);
+    backdrop-filter: blur(12px) saturate(120%) contrast(95%);
+    -webkit-backdrop-filter: blur(12px) saturate(120%) contrast(95%);
+}
+
+@supports not ((-webkit-backdrop-filter: blur(0)) or (backdrop-filter: blur(0))) {
+    .bg-frosted-glass {
+        background: color-mix(in oklch, var(--surface-color) 10%, transparent);
+    }
 }
