@@ -1,3 +1,9 @@
+<script lang="ts">
+  import MetaHome from '$components/MetaHome.svelte'
+</script>
+
+<MetaHome />
+
 <section class="hero h-screen">
   <div class="hero-content">
     <div class="max-w-md text-center">
