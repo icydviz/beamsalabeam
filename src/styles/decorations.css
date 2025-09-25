@@ -1,0 +1,18 @@
+.img-decor-1 {
+    position: relative;
+}
+
+.img-decor-1 img {
+    transform: perspective(800px) rotateX(15deg);
+    transform-origin: center;
+    display: inline-block;
+    transition-property: transform;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: .6s;
+}
+
+.img-decor-1:hover img {
+    transform: perspective(800px) rotateX(0deg);
+    transform-origin: center;
+    display: inline-block;
+}

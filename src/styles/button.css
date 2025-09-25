@@ -15,6 +15,7 @@
     box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
     transition-timing-function: linear;
     transition-duration: .2s;
+    outline: none;
     transition-property: background-color border-color transform box-shadow;
 }
 
@@ -28,4 +29,19 @@
     border-color: color-mix(in oklab, var(--button-color) 100%, #000 20%);
     background-color: color-mix(in oklab, var(--button-color) 100%, #000 20%);
     transform: scale(0.99);
+}
+
+.btn-ghost {
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.btn-ghost:hover {
+    background-color: color-mix(in oklch, var(--button-color) 10%, transparent);
+    border-color: transparent;
+}
+
+.btn-ghost:active {
+    background-color: color-mix(in oklch, var(--button-color) 20%, transparent);
+    border-color: transparent;
 }
