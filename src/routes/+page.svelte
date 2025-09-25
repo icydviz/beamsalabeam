@@ -1,5 +1,6 @@
 <script lang="ts">
   import MetaHome from '$components/MetaHome.svelte'
+  import Footer from '$components/Footer.svelte'
 </script>
 
 <MetaHome />
@@ -16,8 +17,4 @@
   </div>
 </section>
 
-<footer class="footer">
-  <aside>
-    <p class="m-0 text-subtitle"><small>Copyright © {new Date().getFullYear()} - All right reserved by Beamsalabeam group</small></p>
-  </aside>
-</footer>
+<Footer />
