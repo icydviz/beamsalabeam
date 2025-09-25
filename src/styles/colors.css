@@ -1,0 +1,9 @@
+@import url("variables.css");
+
+.fill-surface {
+    fill: var(--surface-color);
+}
+
+.fill-on-surface {
+    fill: var(--on-surface-color);
+}

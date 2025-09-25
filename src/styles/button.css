@@ -10,38 +10,45 @@
     background-color: var(--button-color);
     color: var(--on-surface-color);
     border-style: solid;
-    border-color: var(--button-color);
+    border-width: 1px;
+    border-color: color-mix(in oklab, var(--button-color) 90%, #000 10%);
     border-radius: 0.25rem;
     box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
-    transition-timing-function: linear;
-    transition-duration: .2s;
     outline: none;
+    display: flex;
+    align-items: center;
+    gap: 12px;
     transition-property: background-color border-color transform box-shadow;
+    transition-timing-function: linear;
+    transition-duration: .1s;
 }
 
 .btn:hover {
-    border-color: color-mix(in oklab, var(--button-color) 100%, #000 10%);
-    background-color: color-mix(in oklab, var(--button-color) 100%, #000 10%);
+    border-color: color-mix(in oklab, var(--button-color) 100%, #000 20%);
+    background-color: color-mix(in oklab, var(--button-color) 100%, #000 20%);
 }
 
 .btn:active {
     box-shadow: none;
-    border-color: color-mix(in oklab, var(--button-color) 100%, #000 20%);
-    background-color: color-mix(in oklab, var(--button-color) 100%, #000 20%);
+    border-color: color-mix(in oklab, var(--button-color) 100%, #000 10%);
+    background-color: color-mix(in oklab, var(--button-color) 100%, #000 10%);
     transform: scale(0.99);
 }
 
 .btn-ghost {
-    background-color: transparent;
+    background-color: color-mix(in oklch, var(--button-color) 0%, transparent);
     border-color: transparent;
+    box-shadow: none;
 }
 
 .btn-ghost:hover {
-    background-color: color-mix(in oklch, var(--button-color) 10%, transparent);
+    background-color: color-mix(in oklch, var(--button-color) 80%, transparent);
     border-color: transparent;
+    box-shadow: none;
 }
 
 .btn-ghost:active {
-    background-color: color-mix(in oklch, var(--button-color) 20%, transparent);
+    background-color: color-mix(in oklch, var(--button-color) 70%, transparent);
     border-color: transparent;
+    box-shadow: none;
 }

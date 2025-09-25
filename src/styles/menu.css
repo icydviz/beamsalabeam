@@ -1,0 +1,29 @@
+.app-bar {
+    position: fixed;
+    top: 16px;
+    z-index: 50;
+    width: calc(100% - 16px);
+    max-width: 768px;
+    min-height: 60px;
+    border-radius: 9999px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.app-bar-title {
+    padding-left: 0.5rem;
+}
+
+.brand-name {
+    display: none;
+    padding-right: 12px;
+}
+
+@media screen and (min-width: 640px) {
+    .brand-name {
+        display: block;
+    }
+}

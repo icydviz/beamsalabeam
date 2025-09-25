@@ -1,40 +1,25 @@
 @import url("./styles/base.css");
 @import url("./styles/button.css");
+@import url("./styles/colors.css");
 @import url("./styles/decorations.css");
+@import url("./styles/flex.css");
 @import url("./styles/fonts.css");
 @import url("./styles/footer.css");
+@import url("./styles/height.css");
 @import url("./styles/hero.css");
 @import url("./styles/link.css");
 @import url("./styles/list.css");
+@import url("./styles/margins.css");
+@import url("./styles/menu.css");
+@import url("./styles/paddings.css");
+@import url("./styles/position.css");
+@import url("./styles/radius.css");
 @import url("./styles/steps.css");
 @import url("./styles/typography.css");
+@import url("./styles/width.css");
 
 .app {
     max-width: 1280px;
     margin-left: auto;
     margin-right: auto;
-}
-
-.h-screen {
-    height: 100vh;
-}
-
-.m-0 {
-    margin: 0px;
-}
-
-.uppercase {
-    text-transform: uppercase;
-}
-
-.max-w-md {
-    max-width: 48rem;
-}
-
-.w-full {
-    width: 100%;
-}
-
-.rounded {
-    border-radius: 0.25rem;
 }

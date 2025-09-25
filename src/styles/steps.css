@@ -1,33 +1,41 @@
 @import url("variables.css");
 
-.work-steps-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 1rem;
-}
-
 .work-steps-bar {
-    background-color: var(--on-surface-color);
-    color: var(--surface-color);
+    width: 100%;
     box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
-    padding: 0.5rem;
+    padding: 0.25rem;
     border-radius: 0.5rem;
+    border-width: 1px;
     border-style: solid;
-    border-width: 0.125rem;
     border-color: var(--divider-color);
 }
 
 .work-steps {
     display: flex;
-    gap: 0.5rem;
+    gap: 4px;
     flex-direction: column;
     justify-content: start;
     align-items: start;
 }
 
+.work-steps li,
+.work-steps li button {
+    width: 100%;
+    text-align: start;
+}
+
 @media screen and (min-width: 640px) {
+    .work-steps-bar {
+        width: unset;
+    }
+
     .work-steps {
         flex-direction: row;
+    }
+
+    .work-steps li,
+    .work-steps li button {
+        width: unset;
+        text-align: center;
     }
 }
