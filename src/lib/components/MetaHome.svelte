@@ -1,5 +1,5 @@
 <script lang="ts">
-  const website = 'https://beamsalabeam.com'
+  import { website } from '$lib'
 </script>
 
 <svelte:head>
