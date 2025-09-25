@@ -8,6 +8,20 @@
     color: var(--subtitle-color);
 }
 
-.text-display {
-    font-size: 48px;
+.text-title {
+    font-size: 36px;
+}
+
+.text-secondary {
+    color: var(--secondary-color);
+}
+
+.text-inverted {
+    color: var(--on-surface-color-inverted);
+}
+
+@media screen and (min-width: 640px) {
+    .text-title {
+        font-size: 48px;
+    }
 }

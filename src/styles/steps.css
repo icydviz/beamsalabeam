@@ -1,0 +1,33 @@
+@import url("variables.css");
+
+.work-steps-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.work-steps-bar {
+    background-color: var(--on-surface-color);
+    color: var(--surface-color);
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border-style: solid;
+    border-width: 0.125rem;
+    border-color: var(--divider-color);
+}
+
+.work-steps {
+    display: flex;
+    gap: 0.5rem;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+}
+
+@media screen and (min-width: 640px) {
+    .work-steps {
+        flex-direction: row;
+    }
+}

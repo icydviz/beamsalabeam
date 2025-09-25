@@ -5,8 +5,10 @@
     --bg-color: oklch(0.9707 0.0027 286.35);
     --surface-color: oklch(1 0 89.88);
     --on-surface-color: oklch(0.2221 0 89.88);
+    --on-surface-color-inverted: oklch(1 0 89.88);
     --subtitle-color: oklch(0.5399 0.0077 286.14);
     --button-color: oklch(0.9612 0 89.88);
+    --divider-color: oklch(0.5949 0.0398 249.77);
     --neutral-color: oklch(0.895 0.0116 252.10);
 }
 
@@ -17,7 +19,9 @@
     --bg-color: oklch(0.1071 0.0194 262.03);
     --surface-color: oklch(0.1757 0.0122 254.15);
     --on-surface-color: oklch(1 0 89.88);
+    --on-surface-color-inverted: oklch(0.1757 0.0122 254.15);
     --subtitle-color: oklch(0.9703 0.0103 247.93);
     --button-color: oklch(0.2326 0.0138 253.10);
+    --divider-color: oklch(0.438 0.0398 249.77);
     --neutral-color: oklch(0.3147 0.0204 257.27);
 }
